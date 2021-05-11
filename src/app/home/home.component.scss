@@ -1,0 +1,55 @@
+.wapper {
+    width: 100%;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+.header{ 
+    display: flex;
+    width: 100%;
+    .header-logo{
+        img {
+            width: 300px;
+
+        }
+    }
+    .header-menu{
+        list-style: none;
+        display: flex;
+        align-items: center; 
+        justify-content: flex-end;
+        width: 100%;
+        cursor: pointer;
+        .header-menu-item{
+            font-size: 16px;
+            font-weight: 400;
+            color: black;
+            margin: 0px 16px;
+            padding: 5px 0px;
+        }
+        .active {
+            border-bottom: 1px solid black ;
+            font-weight: 500;
+            color: black;
+
+
+        }
+    }
+}
+.table {
+    width: 100%;
+    cursor: context-menu;
+    margin-top: 30px;
+    .table-th {
+        background: linear-gradient(103.83deg, #58AECC 0%, #3BA6CC 100%);
+        text-align: center;
+    }
+    .table-td{
+        text-align: center;
+        border-bottom:  1px solid #272727;
+        
+        
+    }
+
+}
