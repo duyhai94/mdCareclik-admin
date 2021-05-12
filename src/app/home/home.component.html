@@ -28,10 +28,11 @@
             <tr
                 class="table-td"
                 routerLink="/home-detail"
+                *ngFor="let i of list"
             >
-                <td>01</td>
-                <td>Jonh</td>
-                <td>20/05/2021 07:00</td>
+                <td>{{i.ScanId}}</td>
+                <td>{{i.LastName}}</td>
+                <td>{{i.CreatedOn}}</td>
             </tr>
 
         </table>
