@@ -13,15 +13,8 @@ export class HomeComponent implements OnInit {
 
     ngOnInit(): void {
 
-        this.http.get(`https://xktagmr2ec.execute-api.ap-southeast-1.amazonaws.com/dev/scan`).subscribe((res) => {
-            this.data = res;
-
-            this.list = this.data.payload;
-
-
-
-
-
+        this.http.get(`https://xktagmr2ec.execute-api.ap-southeast-1.amazonaws.com/dev/scan`).subscribe((res: any) => {
+            this.list = res.payload;
         },
         )
     }
