@@ -2,15 +2,11 @@
 ul, li {
     list-style: none;
 }
-.card-detail {
-    width: 100%;
-    margin: 30px 0px;
-    border: 1px solid rebeccapurple;
-    border-radius: 18px;
 
-}
 
 .detail{
+    background: rgba($color: #999999, $alpha: 0.3);
+    margin-top: 50px;
     .header{
         display: flex;
         align-items: center;
@@ -59,7 +55,7 @@ ul, li {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             padding: 16px;
             .info-item {
                 font-size: 14px ;
@@ -74,7 +70,34 @@ ul, li {
                 
             }
             
+       
+        }
     }
-    
 }
+
+
+.bottom {
+    border-top: 5px solid black;
+    display: flex;
+    padding: 20px;
+    background: rgba($color: #999999, $alpha: 0.3);
+
+    .result {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        .header{
+            font-size: 54px;
+            font-weight: 500;
+            color: #449D44;
+            text-transform: uppercase;
+            line-height: 35px;
+            
+        }
+        .text {
+            font-size: 16px;
+            font-weight: 500;
+            padding-top: 16px;
+        }
+    }
 }
