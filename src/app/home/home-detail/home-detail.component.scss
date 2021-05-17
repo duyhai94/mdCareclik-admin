@@ -54,13 +54,14 @@ ul, li {
         .info {
             width: 100%;
             display: flex;
-            justify-content: space-between;
             align-items: flex-start;
             padding: 16px;
+
             .info-item {
                 font-size: 14px ;
                 font-weight: 500;
                 line-height: 30px;
+                margin: 0px 30px;
                 .info-item-label{
                     font-size: 36px;
                     color: #14B3D6;
